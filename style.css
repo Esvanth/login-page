@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  background: url(./img/wallpaper.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-form {
+  width: 320px;
+  height: 380px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.profile-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-pic img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+}
+form {
+  margin-top: 50px;
+  padding: 10px 20px;
+}
+h1 {
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+}
+form label {
+  display: block;
+  font-size: 18px;
+  padding: 5px 0;
+}
+.input-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 10px 0;
+  border-bottom: 2px solid dodgerblue;
+  transition: all 0.4s;
+}
+.input-field:hover {
+  border-bottom: 2px solid green;
+}
+form input {
+  width: 100%;
+  font-size: 20px;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+}
+.forget {
+  text-decoration: none;
+  color: red;
+  cursor: pointer;
+  display: block;
+}
+.login a {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 20px 0;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  background-color: #0386f6;
+  color: #fff;
+  border-radius: 100px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: all 0.4s;
+}
+.login a:hover {
+  background-color: #0373d3;
+}

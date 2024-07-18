@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Form Design</title>
+  <!-- Linking with CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Linking with Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container">
+    <div class="login-form">
+      <div class="profile-pic">
+        <img src="./img/profile.jpeg" alt="Profile" />
+      </div>
+      <form action="#">
+        <h1>Login Here</h1>
+        <label for="username">Username</label>
+        <div class="input-field">
+          <i class="fas fa-user"></i>
+          <input type="text" id="username" placeholder="Enter your username" required />
+        </div>
+        <label for="password">Password</label>
+        <div class="input-field">
+          <i class="fas fa-eye-slash"></i>
+          <input type="password" id="password" placeholder="Enter your password" required />
+        </div>
+        <a href="#" class="forget">Forgot Password</a>
+        <div class="login">
+          <a href="#">Login</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal for Forgot Password -->
+  <div id="forgotPasswordModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Forgot Password</h2>
+      <p>Enter your email to receive a password reset link:</p>
+      <form id="forgotPasswordForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+        <button id="sendButton" type="button">Send Reset Link</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
